@@ -88,6 +88,10 @@ color: cadetblue;
   border: 8px solid rgb(3, 195, 253);
 }
 
+.round {
+  border-radius: 8px;
+}
+
 /* style rules for footer content */
 footer p {
   font-size: 0.75em;
