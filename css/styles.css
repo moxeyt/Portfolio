@@ -54,10 +54,34 @@ padding: 0.5em 1em;
 text-decoration: none;
 }
 
+/* show mobile class, hide tablet desktop class*/
+.mobile {
+  display: block;
+}
+  .tablet-desktop {
+    display: none;
+  }
+
 /* style rules for main content */
 main {
 color: cadetblue;
 }
+
+.tel-link {
+  background-color: rgb(27, 27, 27);
+  padding-left: 2%;
+  margin: 0% auto;
+  width: 80%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.tel-link a {
+  color:cadetblue;
+  text-decoration: none;
+  font-size: 1.5em;
+  display: block;
+  }
 
 .map {
   border: 8px solid rgb(3, 195, 253);
