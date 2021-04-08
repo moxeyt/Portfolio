@@ -1,6 +1,6 @@
 /* Author: Timothy Moxey Date: 25-Feb-2021 File name: styles.css */
 /* css reset */
-body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside {
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -17,8 +17,10 @@ img {
 * {
   box-sizing: border-box;
 }
+/*style rules for mobile veiwport*/
 /* style rules for header */
 header {
+  top: 0;
   color: cadetblue;
 }
 /* style rules for navigation area */
@@ -48,6 +50,9 @@ nav li a {
 nav li a:hover {
   color: rgb(27, 27, 27);
   background-color:cadetblue;
+}
+video {
+  margin: 0 auto 4%;
 }
 /* show mobile class, hide tablet desktop class*/
 .mobile {
@@ -97,6 +102,8 @@ article:nth-last-of-type(2) {
 }
 .map {
   border: 8px solid rgb(3, 195, 253);
+  width: 95%;
+  height: 95%;
 }
 .round {
   border-radius: 8px;
@@ -170,6 +177,9 @@ footer p a {
       display: none;
  }
  /* Tablet Viewport: Style rule for header*/
+ .header {
+  padding-bottom: 2%;
+}
  /* Tablet Viewport: Style rules for nav area*/
 }
 /* Tablet Viewport: Style rules for main content area*/
@@ -220,11 +230,48 @@ th{
  ;
   font-size: 1.15em;
 }
+/* Tablet Viewport: Style rule for form element */
+form {
+  width: 70%;
+  margin: 0 auto;
+}
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1051px), print {
  /* Desktop viewport: Style rule for header*/
  /* Desktop Viewport: Style rules for nav area */
  /* Desktop Viewport: Style rules for main content */
+ main {
+  clear: left;
+}
+main h1 {
+  font-size: 1.8em;
+}
+article h3 {
+font-size: 1.75em;
+}
+.pic-text {
+font-size: 1.5em;
+padding: 20px;
+}
+.frame {
+opacity: 0.9;
+}
+.frame:hover {
+opacity: 1;
+box-shadow: 8px 8px 10px;
+}
+/* Desktop Viewport: Style rules for form elements*/
+form {
+  width: auto;
+}
+.form-grid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+}
+.btn {
+  grid-column: 1 / span 3;
+}
 }
 /* Media Query for Large Desktop Viewports */
 @media screen and (min-width: 1921px), print {
